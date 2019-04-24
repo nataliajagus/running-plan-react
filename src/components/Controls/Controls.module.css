@@ -1,0 +1,35 @@
+.start, .stop {
+    border-radius: 10px;
+}
+
+.start {
+    color: #096db2;
+    background-color: #fff;
+    border: 1px solid #096db2;
+}
+
+.start:hover {
+    color: #fff;
+    background-color: #096db2;
+    cursor: pointer;
+}
+
+.stop {
+    color: red;
+    background-color: #fff;
+    border: 1px solid red;
+}
+
+.stop:hover {
+    color: #fff;
+    background-color: red;
+    cursor: pointer;
+}
+
+.stop:disabled,
+.start:disabled {
+    cursor: default;
+    background: #cdcdcd;
+    color: #FFF;
+    border: 0;
+}
