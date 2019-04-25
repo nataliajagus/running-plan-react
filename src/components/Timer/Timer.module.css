@@ -1,0 +1,35 @@
+.container {
+    padding: 50px;
+    background: #fff;
+    flex-shrink: 0;
+    flex-direction: column;
+    display: flex;
+    width: 40%;
+    align-self: center;
+    border-radius: 18px;
+    border: none;
+    box-shadow: 1px 2px 8px 0px rgba(0,0,0,0.18);
+    margin-top: 30px;
+}
+
+
+.time, .mode {
+    color: #1F5AAC;
+}
+
+.time {
+    font-size: 103px;
+    display: flex;
+    justify-content: center;
+}
+
+.mode {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+@media (max-width: 620px) {
+    .time {
+        font-size: 70px;
+    }
+}
