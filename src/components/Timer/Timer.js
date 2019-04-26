@@ -4,7 +4,13 @@ import styles from './Timer.module.css';
 class Timer extends Component {
 
     state = {
-
+        isRunning: false,
+        isWalking: false,
+        isWalkingStoped: false,
+        runCounter: 0,
+        numberOfRounds: 0,
+        runTimeLeft: 0,
+        walkTimeLeft: 0
     }
 
     render () {
@@ -12,10 +18,6 @@ class Timer extends Component {
             <span className={styles.time}>02:29</span>
             <span className={styles.mode}>bieg</span>
         </div>
-    }
-
-    componentDidMount() {
-        
     }
 
     convertSeconds = (s) => {
